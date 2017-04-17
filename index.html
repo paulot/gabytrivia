@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="overlay.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="giphy.js"></script>
+    <script src="solitaire.js"></script>
+  </head>
+  <body onload="getQuestions(populateQuestions)">
+    <div class="trivia container">
+      <h1 id="currentact">Gaby and Paulo</h1>
+      <div class="innerTrivia">
+        <h3 id="title"></h3>
+        <ul id="answers"></ul>
+        <button class="btn btn-primary" onclick="submitQuestion()">Submit</button>
+      </div>
+    </div>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <div class="overlay-content">
+        <a href="#" id="message"></a>
+        <img id="sillyphoto" width="200px" height="200px" class="img-circle"/>
+        <div id="photocontainer"></div>
+      </div>
+    </div>
+    <br/>
+  </body>
+</html>
